@@ -30,11 +30,11 @@ public class EditManager : MonoBehaviour
     public int bottomNum = 0;
     public int wallNum = 0;
 
-    //y좌표값
+    //yPos
     public int[,] _yPos;
     public int[] _yPos2;
 
-    //회전값
+    //RotValues
     public int[,] tileRot;
     public int[] tileRot2;
 
