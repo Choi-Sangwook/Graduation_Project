@@ -7,10 +7,12 @@ public class MapTitle : MonoBehaviour
 {
     public MapListManager manager;
     public string title;
+    public int index;
 
     public void onClickedTitle()
     {
         manager.OnclickedTitle(title);
+        manager.index = index;
     }
 
     // Start is called before the first frame update
