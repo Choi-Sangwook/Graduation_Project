@@ -40,10 +40,6 @@ public class SaveAndLoad : MonoBehaviour
         if (!Directory.Exists(SAVE_DATA_DIRECTORY))
             Directory.CreateDirectory(SAVE_DATA_DIRECTORY);
 
-
-
-
-
         //서버와 연결
         //socketIoClient = FindObjectOfType<SocketIoClient>();
     }
@@ -134,7 +130,7 @@ public class SaveAndLoad : MonoBehaviour
         Texture2D imageTexture = new Texture2D(captureWidth, captureHeight, TextureFormat.RGB24, false);
 
         // 캡쳐할 영역의 크기와 위치를 지정하여 ReadPixels합니다.
-        imageTexture.ReadPixels(new Rect(500, 120, captureWidth, captureHeight), 0, 0);
+        imageTexture.ReadPixels(new Rect(475, 130, captureWidth, captureHeight), 0, 0);
         imageTexture.Apply();
 
         // 카메라 설정 초기화
@@ -170,4 +166,5 @@ public class SaveAndLoad : MonoBehaviour
 
         return result;
     }
+
 }
